@@ -8,11 +8,11 @@ public class mainRocPapSci {
 
         int playerSel;
         do{
-            System.out.print("Paper(1) \nRock(2) \nScissors(3) > ");
+            System.out.print("Rock(1) \nPaper(2) \nScissors(3) > ");
             playerSel = sc.nextInt();
         }while(playerSel < 1 || playerSel > 3);
         int computerSel = rn.nextInt(4)+1;
-        if(computerSel == 1 && playerSel == 2 || computerSel == 2 && playerSel == 3 || computerSel == 3 && playerSel == 1){
+        if(computerSel == 1 && playerSel == 3 || computerSel == 2 && playerSel == 1 || computerSel == 3 && playerSel == 2){
             System.out.println("Computer has won!");
         } else if (computerSel == playerSel){
             System.out.println("It's a tie!");
